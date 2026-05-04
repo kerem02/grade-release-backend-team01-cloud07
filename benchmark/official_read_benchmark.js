@@ -5,7 +5,7 @@ import exec from "k6/execution";
 
 const BASE_URL = __ENV.BASE_URL || "http://localhost:8000";
 const COURSE_CODE = __ENV.COURSE_CODE || "CLOUD101";
-const STUDENT_FILE = __ENV.STUDENT_FILE || "benchmark/students.csv";
+const STUDENT_FILE = (__ENV.STUDENT_FILE || "students.csv").replace(/^benchmark\//, "");
 
 const students = new SharedArray("students", function () {
   const raw = open(STUDENT_FILE).trim().split("\n");

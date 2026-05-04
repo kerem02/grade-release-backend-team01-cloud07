@@ -1,0 +1,3 @@
+BASE_URL_STAGE1=http://107.22.140.51:8000
+BASE_URL_STAGE2=http://gr-stage2-alb-team07-606482747.us-east-1.elb.amazonaws.com
+BASE_URL_STAGE3=https://3q7dj1bpo5.execute-api.us-east-1.amazonaws.com/default
