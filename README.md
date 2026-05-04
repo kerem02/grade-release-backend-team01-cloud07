@@ -5,7 +5,7 @@ University grade release backend for the Cloud Engineering AWS term project.
 ## Shared identity
 
 ```env
-TEAM_ID=team07
+TEAM_ID=team-01
 CHALLENGE_CODE=cloud07
 TEAM_MEMBERS=albayrakk,atilgano,oncut
 ```
@@ -27,7 +27,7 @@ Requires AWS CLI credentials with DynamoDB and SNS permissions.
 
 ```bash
 export AWS_REGION=us-east-1
-export TEAM_ID=team07
+export TEAM_ID=team-01
 export CHALLENGE_CODE=cloud07
 ./scripts/create_aws_resources.sh
 ```
